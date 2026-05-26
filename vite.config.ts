@@ -24,7 +24,7 @@ export default defineConfig(({ command, mode }) => {
   // gh-pages 部署模式 - 构建静态站点
   if (mode === 'gh-pages') {
     return {
-      root: './',
+      root: './examples',
       plugins: [vue()],
       resolve: {
         alias: {
@@ -32,7 +32,8 @@ export default defineConfig(({ command, mode }) => {
         }
       },
       build: {
-        outDir: '../dist-gh-pages'
+        outDir: '../dist-gh-pages',
+        emptyOutDir: true
       },
       base: '/ai-stream-scroll/'
     }
