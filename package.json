@@ -16,7 +16,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "dev:example": "vite serve examples --config vite.config.ts --mode example",
-    "build:example": "vue-tsc && vite build --config vite.config.ts --mode example"
+    "build:example": "vue-tsc && vite build --config vite.config.ts --mode example",
+    "build:gh-pages": "vue-tsc && vite build --config vite.config.ts --mode gh-pages",
+    "deploy:gh-pages": "npm run build:gh-pages && gh-pages -d dist-gh-pages"
   },
   "dependencies": {
     "vue": "^3.3.0"

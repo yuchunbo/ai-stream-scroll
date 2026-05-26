@@ -21,6 +21,23 @@ export default defineConfig(({ command, mode }) => {
     }
   }
 
+  // gh-pages 部署模式 - 构建静态站点
+  if (mode === 'gh-pages') {
+    return {
+      root: './',
+      plugins: [vue()],
+      resolve: {
+        alias: {
+          '@': resolve(__dirname, 'src')
+        }
+      },
+      build: {
+        outDir: '../dist-gh-pages'
+      },
+      base: '/ai-stream-scroll/'
+    }
+  }
+
   // 默认构建配置
   return {
     plugins: [vue()],
