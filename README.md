@@ -2,10 +2,16 @@
 
 AI 流式输出 + 智能随读滚动插件
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-View%20Demo-blue)](https://yuchunbo.github.io/ai-stream-scroll/)
+
 ## 解决痛点
 现有 AI 流式输出强制底部滚动，新文字上顶打乱阅读视线，用户频繁手动暂停，长文精读体验极差。
 
 本插件可实现预加载后置渲染 + 基准匀速自动滚 + 用户行为个性化调速 + 手动即时接管，做到千人千面沉浸式阅读，兼顾自动省心与手动自由。
+
+## 🎮 在线演示
+
+👉 **[查看在线演示](https://yuchunbo.github.io/ai-stream-scroll/)**
 
 ## ✨ 核心特性
 
