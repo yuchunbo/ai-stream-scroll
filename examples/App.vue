@@ -311,7 +311,7 @@ watch(enableSmartScroll, (newValue) => {
 
     <main class="flex-1 flex flex-col max-w-6xl mx-auto w-full px-4 py-6 gap-4">
       <!-- 输出容器 -->
-      <div class="bg-white rounded-xl shadow-lg flex flex-col h-[calc(100vh-320px)] min-h-[300px]">
+      <div class="bg-white rounded-xl shadow-lg flex flex-col h-[calc(100vh-520px)] min-h-[300px]">
         <div class="flex items-center justify-between px-4 py-3 border-b border-gray-100 bg-gray-50 rounded-t-xl">
           <span class="text-sm text-gray-600">输出内容</span>
           <div class="flex items-center gap-3">
