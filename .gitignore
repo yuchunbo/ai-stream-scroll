@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 dist-example
+dist-gh-pages
 *.local
 
 # Editor directories and files

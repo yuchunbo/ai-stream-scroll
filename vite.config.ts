@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
 export default defineConfig(({ command, mode }) => {
-  // 示例模式
+  // 示例模式 - 开发预览
   if (mode === 'example') {
     return {
       plugins: [vue()],
@@ -21,7 +21,24 @@ export default defineConfig(({ command, mode }) => {
     }
   }
 
-  // 默认构建配置
+  // gh-pages 部署模式 - 构建静态站点
+  if (mode === 'gh-pages') {
+    return {
+      root: './',
+      plugins: [vue()],
+      resolve: {
+        alias: {
+          '@': resolve(__dirname, 'src')
+        }
+      },
+      build: {
+        outDir: resolve(__dirname, 'dist-gh-pages')
+      },
+      base: '/ai-stream-scroll/'
+    }
+  }
+
+  // 默认构建配置 - 构建库
   return {
     plugins: [vue()],
     resolve: {
